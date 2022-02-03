@@ -1,0 +1,453 @@
+@import url("./null.css");
+@font-face {
+   font-family: "UniNeueBlackItalic";
+   src: url("../fonts/UniNeueBlack-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueBlack";
+   src: url("../fonts/UniNeueBlack.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueBold";
+   src: url("../fonts/UniNeueBold.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueBoldItalic";
+   src: url("../fonts/UniNeueBold-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueBookItalic";
+   src: url("../fonts/UniNeueBook-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueBook";
+   src: url("../fonts/UniNeueBook.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueHeavyItalic";
+   src: url("../fonts/UniNeueHeavy-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueHeavy";
+   src: url("../fonts/UniNeueHeavy.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueLightItalic";
+   src: url("../fonts/UniNeueLight-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueLight";
+   src: url("../fonts/UniNeueLight.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueRegularItalic";
+   src: url("../fonts/UniNeueRegular-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueRegular";
+   src: url("../fonts/UniNeueRegular.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueThinItalic";
+   src: url("../fonts/UniNeueThin-Italic.ttf") format "ttf";
+}
+@font-face {
+   font-family: "UniNeueThin";
+   src: url("../fonts/UniNeueThin.ttf") format "ttf";
+}
+body {
+   max-width: 100%;
+   height: 100vh;
+   background: url("../img/Форма.jpg") no-repeat center;
+   background-size: cover;
+}
+.wrapper {
+   max-width: 85%;
+   margin: 0 auto;
+   margin-top: 20px;
+   font-family: "UniNeueRegular", sans-serif;
+}
+.container {
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.logo {
+   display: flex;
+   justify-content: space-between;
+   width: 26vw;
+   height: 4vh;
+   font-size: 0.89rem;
+   line-height: 1.5;
+   .logo-img {
+      width: 50%;
+      margin-right: 30px;
+      img {
+         width: 120px;
+         height: 50px;
+      }
+   }
+   .lng-logo .logo-text {
+      font-weight: normal;
+      .lng-logo1 {
+         font-weight: 700;
+      }
+   }
+}
+@media (max-width: 960px) {
+   .logo {
+      display: block;
+   }
+}
+.map {
+   display: flex;
+   justify-content: space-between;
+   font-size: 0.75rem;
+   line-height: 1.5;
+   img {
+      width: 9vh;
+      height: 9vh;
+      margin-right: 10px;
+   }
+   .adress {
+      padding-top: 8px;
+      display: inline-block;
+      color: black;
+   }
+   .adress:hover {
+      color: rgb(248, 7, 7);
+      transition: 0.3s;
+   }
+}
+@media (max-width: 1205px) {
+   .map {
+      display: none;
+   }
+}
+.lang {
+   font-size: 0.75rem;
+   line-height: 1.5;
+   .lang-title {
+      margin-top: 8px;
+   }
+   .lng-change {
+      display: flex;
+   }
+   .link {
+      cursor: pointer;
+      margin: 5px;
+      color: black;
+   }
+   .active {
+      color: red;
+   }
+}
+
+.consult {
+   font-size: 16px;
+   font-family: "UniNeueBold";
+   line-height: 1.2;
+   text-align: center;
+   button {
+      width: 200px;
+      height: 50px;
+      background-color: #313d4b;
+      border-radius: 5px;
+   }
+   button:hover {
+      box-shadow: 0px 3px 10px rgba(180, 9, 9, 0.5);
+   }
+   button:active {
+      box-shadow: 2px -3px 4px rgba(180, 9, 9, 0.5);
+   }
+   .consult-title {
+      color: white;
+   }
+}
+@media (max-width: 700px) {
+   .consult {
+      width: 10rem;
+   }
+   .container {
+      display: block;
+   }
+   .lang {
+      margin: 0;
+   }
+   .logo {
+      padding: 0;
+      margin: 0;
+   }
+}
+.calling-tel {
+   display: flex;
+   .calling-tel__img {
+      margin-right: 5px;
+   }
+   a {
+      font-size: 1.2rem;
+      font-family: "UniNeueHeavy";
+      color: black;
+      line-height: 1;
+      text-align: left;
+      font-weight: 700;
+   }
+
+   a:hover {
+      color: blue;
+      transition: 0.5s;
+   }
+}
+@media (max-width: 760px) {
+   .calling-tel {
+      width: 12rem;
+   }
+}
+.calling-social {
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   a {
+      img {
+         width: 40px;
+         height: 40px;
+         margin: 2px;
+         transition: 0.4s;
+      }
+      img:hover {
+         transform: scale(1.2);
+      }
+   }
+}
+.menu-item {
+   display: none;
+}
+@media (max-width: 1060px) {
+   .menu-item {
+      display: block;
+   }
+}
+menu {
+   position: fixed;
+   width: 50%;
+   height: 100vh;
+   background-color: #000;
+   opacity: 0.9;
+   left: 0;
+   margin: 0;
+   top: 0;
+   z-index: 99;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-transform: translateX(-100%);
+   transform: translateX(-100%);
+}
+.active-menu {
+   -webkit-transition: 1s;
+   transition: 1s;
+   -webkit-transform: translateX(50%);
+   transform: translateX(50%);
+}
+
+.close-btn {
+   position: fixed;
+   top: 30px;
+   left: 30px;
+   font-size: 3rem;
+   -webkit-transition: 0.2s;
+   transition: 0.2s;
+   -webkit-transform-origin: 50% 53%;
+   transform-origin: 50% 53%;
+   display: block;
+   line-height: 3rem;
+   text-align: center;
+   width: 3rem;
+   height: 3rem;
+   color: #19b5fe;
+}
+.close-btn:hover {
+   -webkit-transform: rotate(180deg);
+   transform: rotate(180deg);
+}
+.menu:hover {
+   cursor: pointer;
+}
+
+.nav {
+   margin: 20px auto;
+   ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+         font-size: 0.9rem;
+         font-family: "UniNeueBold";
+         text-transform: uppercase;
+         font-weight: 700;
+         a {
+            color: black;
+         }
+         a:hover {
+            color: red;
+            transition: 0.3s;
+         }
+      }
+   }
+}
+@media (max-width: 1060px) {
+   .nav {
+      ul {
+         display: none;
+      }
+   }
+}
+.main__title {
+   margin: 3vw 0;
+   max-width: 55%;
+   h1 {
+      font-size: 3rem;
+      line-height: 1.133;
+      text-align: left;
+      color: rgb(40, 39, 40);
+      b {
+         font-family: "UniNeueBold", sans-serif;
+      }
+      font-family: "UniNeueBook", sans-serif;
+   }
+}
+@media (max-width: 780px) {
+   .main__title {
+      margin: 20px;
+      max-width: 80%;
+   }
+   .logo {
+      width: 15rem;
+      height: 8rem;
+   }
+   .calling-social {
+      display: flex;
+      justify-content: start;
+   }
+}
+.main-lis {
+   margin: 3vw 0;
+   max-width: 60%;
+}
+.main-list {
+   display: flex;
+   li {
+      margin-right: 1vw;
+   }
+}
+.main-list__first {
+   font-size: 4rem;
+   font-family: "UniNeueHeavy", sans-serif;
+   text-align: left;
+   font-weight: 700;
+   margin-right: 3px;
+}
+.main-list__second {
+   font-size: 1rem;
+   font-family: "UniNeueBold";
+   color: rgb(40, 39, 40);
+   text-align: left;
+   padding-top: 5px;
+}
+.main-list__text {
+   font-size: 1rem;
+   font-family: "UniNeueBold";
+   color: rgb(40, 39, 40);
+   text-align: left;
+   display: inline-block;
+   padding: 0 25px;
+}
+.li {
+   background: url("../img/Форма.png") left top no-repeat;
+   padding: 20px 0 0 0;
+}
+.main-col {
+   display: flex;
+   justify-content: space-between;
+   width: 60%;
+}
+.main-col__left {
+   button {
+      background-color: #fe5d54;
+      border-radius: 10px;
+      width: 320px;
+      height: 70px;
+      box-shadow: -2px -5px 3px rgba(134, 42, 42, 0.5);
+      .img {
+         width: 50px;
+         height: 40%;
+         margin-right: 10px;
+         img {
+            width: 100%;
+            height: 110%;
+         }
+      }
+      .text {
+         font-size: 0.8rem;
+         font-family: "UniNeueBold", sans-serif;
+         color: rgb(255, 255, 255);
+         text-transform: uppercase;
+         line-height: 1.412;
+         text-align: left;
+         font-weight: 700;
+      }
+   }
+   button:hover {
+      box-shadow: inset -2px -5px 3px rgba(134, 42, 42, 0.5);
+   }
+   button:active {
+      box-shadow: 0px -1px 3px rgba(235, 136, 136, 0.5);
+   }
+}
+.main-col__title {
+   width: 75%;
+   margin-bottom: 5vh;
+   font-size: 1rem;
+   font-family: "UniNeueRegular", sans-serif;
+   color: rgb(40, 39, 40);
+   line-height: 1.556;
+   text-align: left;
+   b {
+      background: url("../img/Форма\ ввода\ скидки.png") center center no-repeat;
+   }
+}
+.button-container {
+   display: flex;
+   justify-content: space-between;
+   width: 70%;
+   margin: 0 auto;
+}
+.main-col__right {
+   margin-top: 15px;
+   .main-col__titlet {
+      font-size: 0.9rem;
+      font-family: "UniNeueBold", sans-serif;
+      color: rgb(40, 39, 40);
+      margin: 10px;
+      text-align: center;
+      font-weight: 700;
+   }
+   .main-col__license {
+      display: flex;
+      align-items: flex-end;
+      a:hover {
+         transform: scale(1.1);
+         transition: 0.4s;
+      }
+   }
+   @media (max-width: 780px) {
+      .main-col__license {
+         display: block;
+      }
+   }
+}
